@@ -1,34 +1,24 @@
 {
-  // Necessary Extensions
-  // Python; Window Colors, Bracket Pair Colorizer 2
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#342B2A",
-    "titleBar.activeBackground": "#493D3A",
-    "titleBar.activeForeground": "#FBFAFA"
-  },
+  // Adds cute vertical rulers to your editor so you don't go over the 
+  // 80-120 character width.
   "editor.rulers": [
     80,
     120
   ],
+  // Linting rules
+  "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.pylintEnabled": false,
   "python.linting.mypyEnabled": true,
   "python.linting.mypyArgs": [
-    "--config-file=${workspaceFolder}/mypy.cfg"
+    "--config-file=${workspaceFolder}/setup.cfg"
   ],
-  "python.linting.enabled": true,
-  "python.pythonPath": "env/bin/python3.6",
-  "editor.formatOnSave": true,
-  "python.linting.pycodestyleEnabled": false,
-  "python.linting.pylintPath": "pylint",
-  "python.linting.pylintArgs": [
-    "--load-plugins",
-    "pylint_django"
-  ],
-  "python.venvPath": "${workspaceFolder}/env/bin/python3.6",
+  // Possible paths to your python, uncomment/alter as needed
+  // There _should_ be a clickable button on the bottom left that'll 
+  // allow you to change this setting through the GUI
+  // "python.pythonPath": "/usr/bin/python3",
+  // "python.venvPath": "${workspaceFolder}/path/to/python3.X",
   "files.exclude": {
     "**/*.pyc": true
   },
-  "python.formatting.provider": "black",
-  "mypy.executable": "${workspaceFolder}/env/bin/pyls",
 }

@@ -12,16 +12,15 @@
             "console": "integratedTerminal"
         },
         {
-            "name": "Python: Django",
+            "name": "Python: With Args",
             "type": "python",
             "request": "launch",
-            "console": "internalConsole",
-            "program": "${workspaceFolder}/ecom/manage.py",
+            "program": "${file}",
+            "console": "integratedTerminal",
             "args": [
-                "runserver",
-                "--noreload"
-            ],
-            "django": true
-        }
+                // Add args here as a list of 'str'
+                "some_example_input"
+            ]
+        },
     ]
 }

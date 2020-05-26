@@ -1,0 +1,34 @@
+{
+  // Necessary Extensions
+  // Python; Window Colors, Bracket Pair Colorizer 2
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#342B2A",
+    "titleBar.activeBackground": "#493D3A",
+    "titleBar.activeForeground": "#FBFAFA"
+  },
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.mypyEnabled": true,
+  "python.linting.mypyArgs": [
+    "--config-file=${workspaceFolder}/setup.cfg"
+  ],
+  "python.linting.enabled": true,
+  "python.pythonPath": "env/bin/python3.6",
+  "editor.formatOnSave": true,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.pylintPath": "pylint",
+  "python.linting.pylintArgs": [
+    "--load-plugins",
+    "pylint_django"
+  ],
+  "python.venvPath": "${workspaceFolder}/env/bin/python3.6",
+  "files.exclude": {
+    "**/*.pyc": true
+  },
+  "python.formatting.provider": "black",
+  "mypy.executable": "${workspaceFolder}/env/bin/pyls",
+}

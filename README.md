@@ -19,7 +19,7 @@ If you're familiar with `node_modules` they're basically the same thing.
 You can create a virtual environment like so:
 
 ``` bash 
-$ python3 -m venv .example_environment_folde
+$ python3 -m venv .example_environment_folder
 ``` 
 
 This will create a folder like so:

@@ -14,7 +14,7 @@
   "python.linting.pylintEnabled": false,
   "python.linting.mypyEnabled": true,
   "python.linting.mypyArgs": [
-    "--config-file=${workspaceFolder}/setup.cfg"
+    "--config-file=${workspaceFolder}/mypy.cfg"
   ],
   "python.linting.enabled": true,
   "python.pythonPath": "env/bin/python3.6",

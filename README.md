@@ -34,8 +34,12 @@ pip install -r requirements.txt
 
 save plug-ins to a .txt:
 
+```
 code --list-extensions > vscode.txt
+```
 
 install plug-ins from the .txt:
 
+```
 cat vscode.txt | xargs -n 1 code --install-extension
+```

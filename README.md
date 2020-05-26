@@ -2,8 +2,7 @@
 
 Easy setup for python projects with visual studio code
 
-The `setup.cfg` should be dropped in your main project directory, and the settings.json should go into the
-`.vsc` folder
+The `mypy.cfg` should be dropped in your main project directory
 
 ### Provisioning of the virtual environment
 

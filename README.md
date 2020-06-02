@@ -54,6 +54,40 @@ Note: There's no getLogger shenanigans!
 Note 2: The rotating file handler ensures no log file will be over 5MB long!
 This is the default maximum for VSC, as it'll get quite confused if a text file is longer than 5MB
 
+## Using the wrapper
+
+Using the wrapper will allow us to quickly inspect all function calls!
+It's basically a fancy print
+
+* Usage:
+
+```python
+from logging_setup import log_wrapper
+
+@log_wrapper()
+def yo(arg, key_arg=0):
+    return arg + key_arg
+
+yo(0)
+yo(0, key_arg=5)
+yo('aze')
+```
+
+Would produce:
+
+```python
+[2020-06-02 ...]  WARNING { /path/to:118  } - Function yo called with following params: (0,), {}
+[2020-06-02 12:51:04,205]  WARNING { /path/to:118  } - Function yo called with following params: (0,), {'key_arg': 5}
+[2020-06-02 12:51:04,206]  WARNING { /path/to:118  } - Function yo called with following params: ('aze',), {}
+[2020-06-02 12:51:04,206]  ERROR { /path/to:122  } - can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "/path/to", line 120, in wrapper
+    return func(*args, **kwargs)
+  File "/path/to", line 6, in yo
+    return arg + key_arg
+TypeError: can only concatenate str (not "int") to str
+```
+
 ### A Short guide to Virtual Environments
 
 Creating a virtual environment is useful so you'll have all of your 

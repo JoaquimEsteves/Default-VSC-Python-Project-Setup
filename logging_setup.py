@@ -25,10 +25,10 @@ log(50, "yo")
 This will result in a `.logs/warnings.log` file being created, with each line having an output similar to:
 
 ```
-[2020-06-02 12:03:24,171]  CRITICAL { /path/to/yo2.py:3  } - yo
+[2020-06-02 12:03:24,171]  CRITICAL { /path/to/yo.py:3  } - yo
 ```
 
-The `/path/to/yo2.py:3` format is very useful, as you can just ctrl-click it to open it directly in VSC!
+The `/path/to/yo.py:3` format is very useful, as you can just ctrl-click it to open it directly in VSC!
 
 Note: There's no getLogger shenanigans!
 

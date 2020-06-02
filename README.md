@@ -4,6 +4,21 @@ Easy setup for python projects with visual studio code
 
 The `setup.cfg` should be dropped in your main project directory
 
+
+### Vscode plug-ins install snippets
+
+* Save plug-ins to a .txt:
+
+``` 
+$ code --list-extensions > vscode.txt
+```
+
+* install plug-ins from the .txt:
+
+``` 
+$ cat vscode.txt | xargs -n 1 code --install-extension
+```
+
 ### A Short guide to Virtual Environments
 
 Creating a virtual environment is useful so you'll have all of your 
@@ -19,7 +34,7 @@ If you're familiar with `node_modules` they're basically the same thing.
 You can create a virtual environment like so:
 
 ``` bash 
-$ python3 -m venv .example_environment_folde
+$ python3 -m venv .example_environment_folder
 ``` 
 
 This will create a folder like so:
@@ -82,16 +97,3 @@ Install your libraries with:
 
 And notice how they're now installed on `.example_environment_folder/lib/python3.X/site-packages`
 
-### Vscode plug-ins install snippets
-
-* Save plug-ins to a .txt:
-
-``` 
-$ code --list-extensions > vscode.txt
-```
-
-* install plug-ins from the .txt:
-
-``` 
-$ cat vscode.txt | xargs -n 1 code --install-extension
-```

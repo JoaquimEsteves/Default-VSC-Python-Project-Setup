@@ -1,7 +1,0 @@
-# This will install the latest versions of each package
-# Place a specific version so you'll have a reproductible product
-autopep8
-flake8
-flake8-mypy
-mypy
-mypy-extensions

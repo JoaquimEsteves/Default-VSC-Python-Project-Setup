@@ -21,4 +21,9 @@
   "files.exclude": {
     "**/*.pyc": true
   },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#3E2A03",
+    "titleBar.activeBackground": "#573B05",
+    "titleBar.activeForeground": "#FEFAF1"
+  },
 }
